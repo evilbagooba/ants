@@ -1,6 +1,7 @@
 white,black = 0,1
 
 class LangAnt:
+    # in the naming scheme for multiple colors, langtons ants are called RL
     def __init__ (self,x,y,orientation):
         self.x = x 
         self.y = y
@@ -22,6 +23,4 @@ class LangAnt:
             self.orientation = (self.orientation - 1) % 4
             environment.colorSquare(white, self.x, self.y)
             self.forward(environment)
-
-
 
